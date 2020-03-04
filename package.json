@@ -1,0 +1,23 @@
+{
+  "name": "cypariss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-cypress": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Traptyan/cypariss.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Traptyan/cypariss/issues"
+  },
+  "homepage": "https://github.com/Traptyan/cypariss#readme",
+  "devDependencies": {
+    "cypress": "^4.1.0"
+  }
+}
