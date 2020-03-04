@@ -3,7 +3,7 @@ describe('qweqwe', () => {
   
   it('login', () => {
     cy.viewport(1800, 1200);
-    cy.visit('/admin');
+    cy.visit('http://quiz:4000/admin');
     cy.get('#vue-text-input-21').type('admin');
     cy.get('#vue-password-input-24').type('admin');
     cy.contains('Войти').click();
@@ -19,7 +19,7 @@ describe('qweqwe', () => {
     cy.get('.form-control').then(($el) => {
       let formControlList = $el;
       for(let i = 0; i < 3; i++) {
-        cy.get(formControlList[i]).wrap({disabled:'disabled' }).its('disabled').should('eq', 'disabled');
+        cy.get(formControlList[i]).wrap({disabled:'disabled'}).its('disabled').should('eq', 'disabled');
       }
       for(let i = 4; i < 16; i++) {
         cy.get(formControlList[i]).wrap({disabled:'disabled' }).its('disabled').should('eq', 'disabled');

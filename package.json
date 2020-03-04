@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Traptyan/cypariss#readme",
   "devDependencies": {
     "cypress": "^4.1.0"
+  },
+  "dependencies": {
+    "prettier": "^1.19.1"
   }
 }
